@@ -1,1 +1,10 @@
-$LocalTempDir = $env:TEMP; $Installer = "7z2200-x64.msi"; (new-object    System.Net.WebClient).DownloadFile('https://github.com/jcavalheri/demo_p/blob/main/Executables/7z2200-x64.msi', "$LocalTempDir\$CInstaller"); & "$LocalTempDir\$Installer" /silent /install; $Process2Monitor =  "Installer"; Do { $ProcessesFound = Get-Process | ?{$Process2Monitor -contains $_.Name} | Select-Object -ExpandProperty Name; If ($ProcessesFound) { "Still running: $($ProcessesFound -join ', ')" | Write-Host; Start-Sleep -Seconds 2 } else { rm "$LocalTempDir\$ChromeInstaller" -ErrorAction SilentlyContinue -Verbose } } Until (!$ProcessesFound)
+# Source URL
+$url = "https://github.com/jcavalheri/demo_p/blob/main/Executables/7z2200-x64.msi"
+# Destation file
+$dest = "c:\install\7z2200-x64.msi"
+
+# Download the file
+Invoke-WebRequest -Uri $url -OutFile $dest
+
+# Start installation
+msiexec /i c:\install\7z2200-x64.msi /qn
