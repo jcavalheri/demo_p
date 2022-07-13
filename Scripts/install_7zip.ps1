@@ -7,7 +7,7 @@ $dest = "c:\install\7z2200-x64.exe"
 cd C:\install
 
 # Download the file
-Invoke-WebRequest -Uri $url -OutFile $dest
+(New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
 # Start installation
-msiexec.exe /i c:\install\7z2200-x64.msi /qn
+ msiexec.exe /i c:\install\7z2200-x64.msi /qn
