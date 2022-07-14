@@ -11,7 +11,7 @@ $dest = "c:\install\7z2200-x64.msi"
 # Download the file
 (New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
-Sleep 30
+Sleep 10
 
 # Start installation
 msiexec.exe /i 7z2200-x64.msi /qn

@@ -11,6 +11,7 @@ $dest = "c:\install\ChromeSetup.exe"
 # Download the file
 (New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
-Sleep 30 
+Sleep 10
+
 # Start installation
 Invoke-expression ChromeSetup.exe /silent /install

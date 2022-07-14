@@ -28,11 +28,9 @@ $dest = "c:\install\install_chome.ps1"
 # Download the file
 (New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
-Sleep 30
 
 ## Do installation after downloading
-firewall.ps1
-install_7zip.ps1
-install_chrome.ps1
-
+Invoke-expression ./c:\install\install_7zip.ps1
+Invoke-expression ./c:\install\install_chrome.ps1
+Invoke-expression ./c:\install\firewall.ps1
 
