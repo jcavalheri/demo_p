@@ -1,5 +1,5 @@
 # Download to install folder
-cd C:\install
+cd C:\install\
 
 # Download Firewall Rules
 # Source URL
@@ -9,5 +9,6 @@ $dest = "c:\install\downloadScripts.ps1"
 # Download the file
 (New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
+Sleep 10
 # Start installation of scripts
-downloadScripts.ps1
+./downloadScripts.ps1

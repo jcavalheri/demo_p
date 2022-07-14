@@ -1,7 +1,7 @@
 # This script will download the file and do installation
 
  # Download to install folder
-cd C:\install
+ cd C:\install\
 
 # Download Firewall Rules
 # Source URL
@@ -14,4 +14,4 @@ $dest = "c:\install\ChromeSetup.exe"
 Sleep 10
 
 # Start installation
-Invoke-expression ChromeSetup.exe /silent /install
+./ChromeSetup.exe /silent /install

@@ -1,7 +1,7 @@
 # This script will download the file and do installation
 
  # Download to install folder
-cd C:\install
+ cd C:\install\
 
 # Download Firewall Rules
 # Source URL
@@ -14,4 +14,4 @@ $dest = "c:\install\7z2200-x64.msi"
 Sleep 10
 
 # Start installation
-msiexec.exe /i 7z2200-x64.msi /qn
+./msiexec.exe /i 7z2200-x64.msi /qn
