@@ -30,7 +30,9 @@ $dest = "c:\install\install_chome.ps1"
 
 
 ## Do installation after downloading
-Invoke-expression ./c:\install\install_7zip.ps1
-Invoke-expression ./c:\install\install_chrome.ps1
-Invoke-expression ./c:\install\firewall.ps1
+Invoke-expression ./install_7zip.ps1
+cd C:\install
+Invoke-expression ./install_chrome.ps1
+cd C:\install
+Invoke-expression ./firewall.ps1
 
