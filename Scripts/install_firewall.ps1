@@ -1,1 +1,0 @@
-echo 'test' >> C:\install\test.txt
