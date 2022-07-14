@@ -17,4 +17,4 @@ $dest = "c:\install\ChromeSetup.exe"
 (New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
 # Start installation
-./ChromeSetup.exe /silent /install
+ChromeSetup.exe /silent /install
