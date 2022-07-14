@@ -1,7 +1,7 @@
 # This script will download the file and do installation
 
  # Download to install folder
- cd C:\install\
+cd C:\install
 
 # Download Firewall Rules
 # Source URL
@@ -11,7 +11,7 @@ $dest = "c:\install\7z2200-x64.msi"
 # Download the file
 (New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
-Sleep 10
+Sleep 5
 
 # Start installation
-./msiexec.exe /i 7z2200-x64.msi /qn
+msiexec.exe /i 7z2200-x64.msi /qn

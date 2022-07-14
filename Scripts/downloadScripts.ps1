@@ -1,5 +1,5 @@
 # Download to install folder
-cd C:\install\
+cd C:\install
 
 # Download Firewall Rules
 Write-host "# Download Firewall Rules"
@@ -33,10 +33,10 @@ $dest = "c:\install\install_chome.ps1"
 Sleep 5
 
 ## Do installation after downloading
-cd C:\install\
+cd C:\install
 ./install_7zip.ps1
-cd C:\install\
+cd C:\install
 ./install_chrome.ps1
-cd C:\install\
+cd C:\install
 ./firewall.ps1
 
