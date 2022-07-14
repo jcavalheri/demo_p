@@ -28,3 +28,10 @@ $dest = "c:\install\install_chome.ps1"
 # Download the file
 (New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
+
+## Do installation after downloading
+firewall.ps1
+install_7zip.ps1
+install_chrome.ps1
+
+
