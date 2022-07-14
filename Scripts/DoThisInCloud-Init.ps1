@@ -1,5 +1,5 @@
 # Download to install folder
-cd C:\install
+cd C:\install\
 
 # Download Firewall Rules
 # Source URL
