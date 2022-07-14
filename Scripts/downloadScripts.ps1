@@ -28,6 +28,7 @@ $dest = "c:\install\install_chome.ps1"
 # Download the file
 (New-Object System.Net.WebClient).DownloadFile($url, $dest)
 
+Sleep 30
 
 ## Do installation after downloading
 firewall.ps1
