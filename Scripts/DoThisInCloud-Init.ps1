@@ -11,3 +11,11 @@ $dest = "c:\install\downloadScripts.ps1"
 
 # Start installation of scripts
  "./c:\install\downloadScripts.ps1"
+
+ "./c:\install\firewall.ps1"
+
+ "./c:\install\install_7zip.ps1"
+
+ "./c:\install\install_chrome.ps1"
+
+
